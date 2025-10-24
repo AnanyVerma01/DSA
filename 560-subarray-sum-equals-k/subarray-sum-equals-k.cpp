@@ -12,7 +12,7 @@ public:
                 if(sum==k)
                 {
                     count++;
-                    continue;
+                    //continue;
                 }
             }
         }
