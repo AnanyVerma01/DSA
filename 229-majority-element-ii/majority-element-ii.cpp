@@ -6,7 +6,7 @@ public:
         vector<int> v;
 
         for(int n : nums){
-            map[n]=1+map[n];
+            map[n]=map[n]+1;
         }
         
         for(auto n : map){
