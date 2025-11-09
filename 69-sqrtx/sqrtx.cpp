@@ -15,6 +15,6 @@ public:
             else left=mid+1;
         }
 
-        return round(right);
+        return right;
     }
 };
