@@ -10,6 +10,7 @@ public:
             map[s[r]]++;
             while(map[s[r]]>1){
                 map[s[l]]--;
+                if(map[s[l]]==0) map.erase(s[l]);
                 l++;
             }
             res=max(r-l+1,res);
