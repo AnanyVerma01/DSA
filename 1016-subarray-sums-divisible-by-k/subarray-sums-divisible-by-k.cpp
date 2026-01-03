@@ -11,9 +11,7 @@ public:
             if(rem<0){
                 rem+=k;
             }
-            if(map[rem]){
-                res+=map[rem];
-            }
+            res+=map[rem];
             map[rem]++;
         }
 
