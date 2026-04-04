@@ -7,12 +7,10 @@ public:
         map<char,int> map;
 
         while(r<n){
-            map[s[r]]++;
-            while(map[s[r]]>1){
-                map[s[l]]--;
-                if(map[s[l]]==0) map.erase(s[l]);
-                l++;
+            if(map.find(s[r])!=map.end() && map[s[r]]>=l){
+                l=map[s[r]]+1;
             }
+            map[s[r]]=r;
             res=max(r-l+1,res);
             r++;
         }
