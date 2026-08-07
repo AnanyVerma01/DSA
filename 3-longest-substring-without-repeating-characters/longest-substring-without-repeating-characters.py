@@ -15,5 +15,4 @@ class Solution(object):
             res = max(res,j-i+1)
             j+=1
 
-        print(table)
         return res
