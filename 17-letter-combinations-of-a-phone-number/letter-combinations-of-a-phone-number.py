@@ -8,8 +8,6 @@ class Solution(object):
             if len(word)==n:
                 res.append(word)
                 return 
-            # if i>=n:
-            #     return
 
             for j in letters[digits[i]]:
                 word += j
