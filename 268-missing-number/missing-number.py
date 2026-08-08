@@ -1,7 +1,6 @@
 class Solution(object):
     def missingNumber(self, nums):
-        maxx = max(nums)
-        for i in range(maxx):
-            if i not in nums:
-                return i
-        return len(nums)
+        n=len(nums)
+        expected=n*(n+1)//2
+        actual = sum(nums)
+        return expected-actual
